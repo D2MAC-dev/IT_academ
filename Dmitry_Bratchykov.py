@@ -70,3 +70,4 @@ text = text.strip()
 print(text)
 
 #новый коммент 
+#версия 2
