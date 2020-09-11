@@ -70,4 +70,4 @@ text = text.strip()
 print(text)
 
 #новый коммент 
-# yt
+# не всё работает
