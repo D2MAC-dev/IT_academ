@@ -68,3 +68,5 @@ print(text.ljust(45),"классический рекурсивный алгор
 text = "    tom    "
 text = text.strip()
 print(text)
+
+#очередной коммент
