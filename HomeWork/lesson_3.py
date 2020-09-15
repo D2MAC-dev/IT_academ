@@ -1,8 +1,7 @@
-m = int(input())
-h = int(input())
-x = h / 100
-imt = round(m / (x * x))
-first = round(int(imt))
-scale = '10' + "=" * first + str("|") + "="*(50 - imt) + "50"
+m = int(input("Введите Ваш вес (кг):"))
+h = int(input("Введите Ваш рост (см) :"))
+imt = round(int(m / (h / 100) ** 2))
+#first = imt
+scale = '10' + "=" * imt + str("|") + "="*(50 - imt) + "50"
 print("Ваш индекс массы тела :" + "" + str(imt))
 print(scale)
