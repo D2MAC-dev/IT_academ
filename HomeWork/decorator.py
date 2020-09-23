@@ -17,5 +17,5 @@ def some_func(a, b):
     return a + b
 
 if __name__ == "__main__":
-    print(some_func(5, 5))
-
+    print(some_func(5, 5)) 
+#
