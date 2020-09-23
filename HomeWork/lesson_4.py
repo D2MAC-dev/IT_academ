@@ -21,6 +21,9 @@ while True:
             print("пора худеть")
         if imt > 36:
             print("я бы перестал есть")
-print(dict.get(keys))
+    user = dict(username)
+    keys = user.keys()
+    print(user.items())
+    print(keys)
 print("end")
 
