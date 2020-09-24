@@ -17,5 +17,20 @@ def some_func(a, b):
     return a + b
 
 if __name__ == "__main__":
-    print(some_func(5, 5)) 
-#
+    print(some_func(6, 5)) 
+
+############################
+
+def dec(func):
+    def wrapper_decorator(*args, **kwargs):
+        args = ("The " + args[0],)
+        value = func(*args, **kwargs)
+        return value
+    return wrapper_decorator
+
+
+def new_func1():
+    return print()
+
+new_func1("Dima")
+
