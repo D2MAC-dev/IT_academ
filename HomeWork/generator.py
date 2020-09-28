@@ -1,14 +1,14 @@
 # создаём функцию генератора "my_generator"
-def my_generator():
-    n = 0
-    while  n < 30:
-        yield n + 1
-        n += 1
+def my_generator(start):
+    while start < 100:
+        if start % 3 == 0:
+            yield "Василий"
+        else:
+            yield start
+        start += 1
 
-# если генерируемое число делится без остатка (x % y) на 3, то выводим 'Василий'
-for i in my_generator():
-    if i % 3:
-        print(i)
-    else:
-        print('Василий')
 
+generator = my_generator(1)
+
+for i in generator:
+    print(i)
