@@ -29,18 +29,32 @@
 # carl = Car('BMW', 2000)
 # print(carl.drive())
 
-print('\u2588\u2588\u2588\u2588\u2588\u2588',
-          '\u2588\u2588  \u2588\u2588',
-          '\u2588\u2588  \u2588\u2588',
-          '\u2588\u2588  \u2588\u2588',
-          '\u2588\u2588\u2588\u2588\u2588\u2588')
-print(('\u2588\u2588\u2588\u2588  ',
-          '  \u2588\u2588  ',
-          '  \u2588\u2588  ',
-          '  \u2588\u2588  ',
-          '\u2588\u2588\u2588\u2588\u2588\u2588'),)
-print(('\u2588\u2588\u2588\u2588\u2588\u2588',
-          '    \u2588\u2588',
-          '\u2588\u2588\u2588\u2588\u2588\u2588',
-          '\u2588\u2588    ',
-          '\u2588\u2588\u2588\u2588\u2588\u2588'),)
+# def abc():
+    
+# abc()
+
+import datetime
+cdt = datetime.datetime.now().time()
+cdt.hour, cdt.minute, cdt.second
+print(cdt.hour, cdt.minute, cdt.second)
+
+# d = {'1': '■■■■■■/■'}
+# print(d['1'])
+
+
+# def get_current_time():
+#     datetime.datetime.now()
+#     return time.hour 
+#     print(time.hour)
+
+l = ['a', 'b', 'c']
+l.append('z')
+print(l)
+
+print(len(l))
+
+    
+
+
+
+
