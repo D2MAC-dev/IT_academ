@@ -1,25 +1,41 @@
 import datetime
+from number import *
+from time import sleep
 
 def get_current_time():
     # get and return current time some how
     cur_t = datetime.datetime.now().time()
-    # return cur_t.hour, cur_t.minute, cur_t.second
-    print(cur_t.hour, cur_t.minute, cur_t.second)
-    # return time
+    #print(cur_t.hour, cur_t.minute, cur_t.second)
+    return cur_t.hour, cur_t.minute, cur_t.second
 
-def print_digits(current_time):
+def print_digits(cur_t):
+#     while True:
+#         if  a == 2:
+#             yield number['0'][0]
+#             yield number['0'][1]
+#             yield number['0'][2]
+#             yield number['0'][3]
+#             yield number['0'][4]
+#             yield clear()
+#         else:
+#             StopIteration
+
+# generator = my_generator()
+# for i in generator:
+#     print(i)
+
     
-# def clear_screen():
-#     pass
+def clear_screen():
+    pass
 
-# def sleep_for_a_while(period):
+def sleep_for_a_while(period):
     pass
 
 if __name__ == "__main__":
     while True:
-        current_time = get_current_time()
-        print_digits(current_time)
-        # clear_screen()
-        # sleep_for_a_while(0.3)
+        cur_t = get_current_time()
+        print_digits(cur_t)
+        clear_screen()
+        sleep(0.3)
 
 

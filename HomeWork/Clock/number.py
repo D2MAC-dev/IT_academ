@@ -1,20 +1,5 @@
-# number = {
-#     '0':('\u25A0\u25A0\u25A0\u25A0\u25A0',
-#          '\u25A0    \u25A0',
-#          '\u25A0    \u25A0',
-#          '\u25A0    \u25A0'
-#          '\u25A0\u25A0\u25A0\u25A0\u25A0')
-#          }
-# print(number['0'])
 
-# import datetime
-
-# cdt = datetime.datetime.now().time()
-# str_cdt = str(cdt)
-# str_cdt_split = str_cdt.split(':')
-# print(str_cdt_split)
-# date_one[0] 
-
+# numbers from 0 to 9
 number = {
     '0': ('\u2588\u2588\u2588\u2588\u2588\u2588',
           '\u2588\u2588  \u2588\u2588',
@@ -68,34 +53,3 @@ number = {
           '\u2588\u2588\u2588\u2588\u2588\u2588'),
 }
 
-
-# for digits in number['0']:
-
-#     print(digits, number['0'][0])
-
-a = 0
-b = 3
-c = 4
-def my_generator():
-    while True:
-        if  a == 2:
-            yield number['0'][0]
-            yield number['0'][1]
-            yield number['0'][2]
-            yield number['0'][3]
-            yield number['0'][4]
-            yield clear()
-        else:
-            StopIteration
-
-generator = my_generator()
-for i in generator:
-    print(i)
-
-
-
-# print(number['0'][0])
-# print(number['0'][1])
-# print(number['0'][2])
-# print(number['0'][3])
-# print(number['0'][4])
