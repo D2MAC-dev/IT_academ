@@ -102,10 +102,11 @@
 #=================================================================
 #словари 
 
-dic = {'Дима': '+375297557514', 'Валя': '+375295676315'}
-print(dic)
+def revers(string):
+    return string[::-1]
 
-for item in dic.keys():
-    print(item)
+print(revers('dlrow'))
+
+
 
 
