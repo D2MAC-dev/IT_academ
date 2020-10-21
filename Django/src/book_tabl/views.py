@@ -5,4 +5,4 @@ from django.http import HttpResponse
 # Create your views here.
 
 def book_tabl(request):
-    return HttpResponse("Model BOOK")
+    return HttpResponse("Таблица врое как сделана, но на сервер не загрузилась, только GIDHUB")
