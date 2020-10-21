@@ -16,9 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from hello_world.views import hello_world
+from book_tabl.views import book_tabl
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('hello-world', hello_world),
-           
+    path('book-tabl', book_tabl)      
 ]
