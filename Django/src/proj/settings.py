@@ -30,6 +30,16 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+
+MY_APPS = [
+    'hello_world',
+    'book_tabl',
+]
+
+THIRS_PARTY_APPS = [
+
+]
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -37,9 +47,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'hello_world',
-    'book_tabl',
-]
+] + MY_APPS + THIRS_PARTY_APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
