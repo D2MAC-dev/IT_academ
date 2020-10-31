@@ -48,7 +48,7 @@ class Book(models.Model):
     
 
     def __str__(self):
-        return f'Book #{self.pk}, genre: {self.book_genres}, author: {self.book_author}, publisher: {self.book_publisher}, code: {self.isbn_code}, price: {self.book_price}, amount: {self.books_amount}'
+        return f'Book #{self.pk}, name: {self.book_name} genre: {self.book_genres}, author: {self.book_author}, publisher: {self.book_publisher}, code: {self.isbn_code}, price: {self.book_price}, amount: {self.books_amount}'
 
 class Comment(models.Model):
     book = models.ForeignKey(
