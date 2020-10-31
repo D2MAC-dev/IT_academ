@@ -4,7 +4,7 @@ class Book(models.Model):
     book_genres = models.CharField(
         'Жанр', 
         max_length = 200, 
-        blank=False, null=False
+        blank=True, null=True
     )
 
     book_name = models.CharField(
@@ -45,8 +45,9 @@ class Book(models.Model):
         default=0,
         blank=False, null=False
     )
-    
 
+
+    
     def __str__(self):
         return f'Book #{self.pk}, name: {self.book_name} genre: {self.book_genres}, author: {self.book_author}, publisher: {self.book_publisher}, code: {self.isbn_code}, price: {self.book_price}, amount: {self.books_amount}'
 
@@ -70,3 +71,5 @@ class Comment(models.Model):
 
     def __str__(self):
         return self.user_name
+
+

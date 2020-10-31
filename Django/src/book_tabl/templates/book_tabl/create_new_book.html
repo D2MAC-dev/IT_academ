@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create new BOOK</title>
+</head>
+<body>
+    <h1>Create new book</h1>
+   <form action="" method="post">
+        {% csrf_token %}
+        <label>Название книги:</label><br>
+        <input type="text" name="name"><br>
+        <label>Жанр:</label><br>
+        <input type="text" name="genre"><br>
+        <label>Автор:</label><br>
+        <input type="text" name="author"><br>
+        <label>Издатель:</label><br>
+        <input type="text" name="publisher"><br>
+        <label>ISBN:</label><br>
+        <input type="number" name="isbn"><br>
+        <label>Цена:</label><br>
+        <input type="number" name="price"><br>
+        <label>Количество:</label><br>
+        <input type="number" name="amount"><br>
+    <button>Submit</button><br>
+    </form>
+</body>
+</html>
