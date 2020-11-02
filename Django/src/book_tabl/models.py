@@ -3,12 +3,14 @@ from django.db import models
 class Book(models.Model):
     book_genres = models.CharField(
         'Жанр', 
+        default='неизвестен',
         max_length = 200, 
-        blank=True, null=True
+        blank=False, null=False
     )
 
     book_name = models.CharField(
-        'Название книги', 
+        'Название книги',
+        default='', 
         max_length = 200, 
         blank=False, null=False
     )
@@ -45,7 +47,6 @@ class Book(models.Model):
         default=0,
         blank=False, null=False
     )
-
 
     
     def __str__(self):
